@@ -240,6 +240,8 @@ position = Vector2(-1, 0)
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(1, 0)
 zoom = Vector2(4, 4)
+limit_bottom = 96
+limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="AnimatableBody2D2" parent="." instance=ExtResource("4_wj6hs")]
