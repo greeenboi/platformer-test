@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c66abiiee60ws" path="res://scenes/player.tscn" id="1_womsk"]
 [ext_resource type="Texture2D" uid="uid://dx4k6nf5oemx7" path="res://assets/sprites/world_tileset.png" id="2_cj7mf"]
-[ext_resource type="PackedScene" uid="uid://cwrjurj48jjn5" path="res://scenes/grass_platform.tscn" id="3_1wuqq"]
+[ext_resource type="PackedScene" uid="uid://cf3ygmuw35coh" path="res://scenes/coin.tscn" id="4_7a48b"]
 [ext_resource type="PackedScene" uid="uid://b0tvm5ujm1bfe" path="res://scenes/sand_platform.tscn" id="4_wj6hs"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_lnpuw"]
@@ -242,9 +242,6 @@ position = Vector2(1, 0)
 zoom = Vector2(4, 4)
 position_smoothing_enabled = true
 
-[node name="AnimatableBody2D" parent="." instance=ExtResource("3_1wuqq")]
-position = Vector2(128, -32)
-
 [node name="AnimatableBody2D2" parent="." instance=ExtResource("4_wj6hs")]
 position = Vector2(760, 32)
 
@@ -253,3 +250,6 @@ libraries = {
 "": SubResource("AnimationLibrary_m0kkd")
 }
 autoplay = "Moving_Platform"
+
+[node name="Coin" parent="." instance=ExtResource("4_7a48b")]
+position = Vector2(312, -48)
